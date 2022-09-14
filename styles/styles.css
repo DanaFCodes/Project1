@@ -282,8 +282,39 @@ p {
   line-height: 32px;
 }
 
+.greenSection {
+  background-color: #0f614e;
+}
+.greenSection .newAdditions {
+  position: absolute;
+  -webkit-box-shadow: 30px 30px 0px #86e0f9;
+          box-shadow: 30px 30px 0px #86e0f9;
+}
+
+.textContainerMain {
+  width: 40%;
+  margin-left: 60%;
+  padding-top: 5%;
+}
+.textContainerMain h4 {
+  margin-top: 0;
+  text-transform: uppercase;
+  width: 40%;
+  text-align: left;
+}
+.textContainerMain img {
+  max-width: 100%;
+}
+.textContainerMain button {
+  background-color: #0c1423;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  padding: 2%;
+}
+
 header {
-  background-image: url(../../under-the-sea-assets/header-image.jpg);
+  background: url(../../under-the-sea-assets/header-image.jpg);
   background-color: #0c1423;
   background-repeat: no-repeat;
 }
@@ -296,6 +327,10 @@ header {
       -ms-flex-pack: end;
           justify-content: flex-end;
   padding-top: 2%;
+  padding-bottom: 5%;
+}
+.flexContainerNav a:hover {
+  color: #86e0f9;
 }
 
 header ul {
@@ -324,7 +359,6 @@ header a {
 }
 
 .goldFish {
-  /* width: 60%; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -333,6 +367,25 @@ header a {
           justify-content: flex-end;
   position: relative;
   bottom: 450px;
+}
+
+.underTheSea {
+  text-align: center;
+  padding-bottom: 10%;
+}
+.underTheSea h3 {
+  text-transform: uppercase;
+}
+.underTheSea .underTheSeaP {
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: left;
+}
+.underTheSea button {
+  background-color: #86e0f9;
+  border: none;
+  padding: 1% 2%;
+  text-transform: uppercase;
 }
 
 @media (max-width: 1300px) {

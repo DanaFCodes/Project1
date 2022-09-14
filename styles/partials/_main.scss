@@ -1,0 +1,38 @@
+.greenSection {
+    background-color: #0f614e;
+    // overflow: visible;
+    // display: flex;
+
+    .newAdditions {
+        position: absolute;
+        box-shadow: 30px 30px 0px #86e0f9;
+    }
+}
+
+.textContainerMain {
+    width: 40%;
+    margin-left: 60%;
+    padding-top: 5%;
+    // doesnt look like wrapper is working here? 
+    h4 {
+            margin-top: 0;
+            text-transform: uppercase;
+            width: 40%;
+            text-align: left;
+        
+        }
+
+    img {
+        max-width: 100%;
+    }
+
+    button {
+        background-color: #0c1423;
+        color: white;
+        border: none;
+        text-transform: uppercase;
+        padding: 2%;
+    }
+
+}
+
