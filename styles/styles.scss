@@ -1,0 +1,11 @@
+// @use "partials/variables" as *;
+// @use "partials/setup";
+@use "partials/baseStyles";
+@use "partials/typography";
+// @use "partials/nav";
+// @use "partials/footer";
+@use "partials/header";
+// @use "partials/sections";
+// // // MEDIA QUERY PARTIAL ALWAYS GOES @BOTTOM
+@use "partials/mediaQueries";
+

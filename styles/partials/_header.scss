@@ -1,0 +1,43 @@
+// @use "variables" as *;
+
+header {
+    background-image: url(../../under-the-sea-assets/header-image.jpg);
+    background-color: #0c1423;
+    background-repeat: no-repeat;
+}
+
+.flexContainerNav {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 2%;
+}
+
+header ul {
+    list-style-type: none;
+    gap: 3rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+ .goldFish img {
+    max-width: 100%;
+}
+
+.headerContainer {
+    width: 40%;
+}
+
+.goldFish {
+    /* width: 60%; */
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 450px;
+
+}
