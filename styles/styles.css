@@ -341,8 +341,9 @@ p {
   color: white;
   border: none;
   text-transform: uppercase;
-  padding: 2%;
-  margin-left: 75%;
+  padding: 3%;
+  margin-left: 70%;
+  width: 30%;
 }
 .mainTwo .nemo {
   margin-top: 40px;
@@ -354,7 +355,74 @@ p {
 
 .linksToStuff {
   background-color: #0c1423;
-  padding-top: 10%;
+  padding-top: 2%;
+  padding-bottom: 3%;
+}
+.linksToStuff .flexContainerTop,
+.linksToStuff .flexContainerBottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.linksToStuff .locations,
+.linksToStuff .community,
+.linksToStuff .blog,
+.linksToStuff .getInTouch {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 2% 3% 2%;
+}
+.linksToStuff .locations h4,
+.linksToStuff .community h4,
+.linksToStuff .blog h4,
+.linksToStuff .getInTouch h4 {
+  margin-left: 10%;
+  text-transform: uppercase;
+}
+.linksToStuff .circle a {
+  float: left;
+  width: 36px;
+  height: 36px;
+  background-color: #86e0f9;
+  border-radius: 20px;
+  margin-top: 8%;
+}
+.linksToStuff .circle i {
+  padding: 12px 11px;
+  font-size: 20px;
+  color: #0c1423;
+  position: relative;
+  bottom: 3px;
+  right: 3px;
+}
+.linksToStuff .blog i {
+  position: relative;
+  bottom: 4px;
+  left: 1px;
+}
+.linksToStuff .community i {
+  position: relative;
+  bottom: 4px;
+  right: 5px;
+}
+
+.banner {
+  background-image: url(../under-the-sea-assets/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15%;
+}
+
+.thisMonthsProfile {
+  background-color: #0c1423;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.thisMonthsProfile .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 header {

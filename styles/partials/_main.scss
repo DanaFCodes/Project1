@@ -62,8 +62,9 @@
                 color: white;
                 border: none;
                 text-transform: uppercase;
-                padding: 2%;
-                margin-left: 75%;
+                padding: 3%;
+                margin-left: 70%;
+                width: 30%;
             }
     }
 
@@ -79,5 +80,80 @@
 
 .linksToStuff {
     background-color: #0c1423;
-    padding-top: 10%;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    
+    .flexContainerTop,
+    .flexContainerBottom {
+        display: flex;
+    }
+
+    .locations,
+    .community,
+    .blog,
+    .getInTouch {
+        flex: 1;
+        padding: 2% 3% 2%;
+
+        h4 {
+            margin-left: 10%;
+            text-transform: uppercase;
+        }
+    }
+    
+    .circle a {
+        float: left;
+        width: 36px;
+        height: 36px;
+        background-color: #86e0f9;
+        border-radius: 20px;
+        margin-top: 8%;
+   
+    }
+
+    .circle i {
+        padding: 12px 11px;
+        font-size: 20px;
+        color: #0c1423;
+        position: relative;
+        bottom: 3px;
+        right: 3px;
+    }
+
+    .blog {
+        i {
+            position: relative;
+            bottom: 4px;
+            left: 1px;
+        }
+    }
+
+    .community {
+        i {
+            position: relative;
+            bottom: 4px;
+            right: 5px;
+        }
+    }
 }
+
+.banner {
+    background-image: url(../under-the-sea-assets/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15%;
+}
+
+ .thisMonthsProfile {
+     background-color: #0c1423;
+     padding-top: 5%;
+     padding-bottom: 5%;
+    
+     .profile {
+        display: flex;
+        
+     }
+
+     
+ }
+
