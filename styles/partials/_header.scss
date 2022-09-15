@@ -1,7 +1,7 @@
 @use "variables" as *;
 
 header {
-    background: $backgroundHeader;
+    background-image: url(../under-the-sea-assets/header-image.jpg);
     background-color: #0c1423;
     background-repeat: no-repeat;
 }
@@ -9,10 +9,13 @@ header {
 .flexContainerNav {
     display: flex;
     justify-content: flex-end;
-    padding-top: 2%;
+    // padding-top: 2%;
     padding-bottom: 5%;
     a:hover {
             color: #86e0f9;
+        }
+    a:focus {
+             color: #86e0f9;
         }
 }
 
@@ -26,8 +29,7 @@ header ul {
 header a {
     text-decoration: none;
     color: white;
-    text-transform: uppercase;
-    
+    text-transform: uppercase; 
 }
 
  .goldFish img {
@@ -43,14 +45,17 @@ header a {
     justify-content: flex-end;
     position: relative;
     bottom: 450px;
+    margin-bottom: -20%;
 }
 
 .underTheSea {
     text-align: center;
     padding-bottom: 10%;
+    
     h3 {
         text-transform: uppercase;
     }
+    
     .underTheSeaP {
         margin-left: 5%;
         margin-right: 5%;
@@ -62,6 +67,5 @@ header a {
         border: none;
         padding: 1% 2%;
         text-transform: uppercase;
-
     }
 }
