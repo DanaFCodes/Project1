@@ -2,7 +2,7 @@
 
 header {
     background-image: url(../under-the-sea-assets/header-image.jpg);
-    background-color: #0c1423;
+    background-color: $darkBlue;
     background-repeat: no-repeat;
 }
 
@@ -12,10 +12,10 @@ header {
     // padding-top: 2%;
     padding-bottom: 5%;
     a:hover {
-            color: #86e0f9;
+            color: $lightBlue;
         }
     a:focus {
-             color: #86e0f9;
+             color: $lightBlue;
         }
 }
 
@@ -63,7 +63,7 @@ header a {
     }
 
     button {
-        background-color: #86e0f9;
+        background-color: $lightBlue;
         border: none;
         padding: 1% 2%;
         text-transform: uppercase;

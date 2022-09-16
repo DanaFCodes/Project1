@@ -1,5 +1,7 @@
+@use "variables" as *;
+
 .greenSection {
-    background-color: #0f614e;
+    background-color: $greenColor;
 }
 
 .mainOne {
@@ -12,7 +14,7 @@
     }
     
     .boxShadow {
-            box-shadow: 40px 40px 0px #86e0f9;
+            box-shadow: 40px 40px 0px $lightBlue;
     }
 
     .textContainerMain {
@@ -27,13 +29,13 @@
         }
 
         button {
-            background-color: #0c1423;
+            background-color: $darkBlue;
             color: white;
             border: none;
             text-transform: uppercase;
-            padding: 2%;
+            padding: 3%;
+            width: 30
         }
-    
     }
 }
 
@@ -58,7 +60,7 @@
             }
     
             button {
-                background-color: #0c1423;
+                background-color: $darkBlue;
                 color: white;
                 border: none;
                 text-transform: uppercase;
@@ -73,13 +75,13 @@
     }
     
     .boxShadow {
-        box-shadow: -40px 40px 0px #86e0f9;
+        box-shadow: -40px 40px 0px $lightBlue;
     }
     
 }
 
 .linksToStuff {
-    background-color: #0c1423;
+    background-color: $darkBlue;
     padding-top: 2%;
     padding-bottom: 3%;
     
@@ -105,7 +107,7 @@
         float: left;
         width: 36px;
         height: 36px;
-        background-color: #86e0f9;
+        background-color: $lightBlue;
         border-radius: 20px;
         margin-top: 8%;
    
@@ -144,16 +146,60 @@
     padding: 15%;
 }
 
- .thisMonthsProfile {
-     background-color: #0c1423;
+.thisMonthsProfile {
+     background-color: $darkBlue;
      padding-top: 5%;
-     padding-bottom: 5%;
+     padding-bottom: 7%;
     
      .profile {
         display: flex;
-        
+
+        .textContainerProfile {
+            flex: 1;
+            order: 2;
+
+            h3 {
+                text-transform: uppercase;
+            }
+        }
+
+        .imageContainerProfile {
+            flex: 1;
+            order: 1;
+            margin-top: 5%;
+        }
      }
 
+    .boxShadow {
+        box-shadow: 40px 40px 0px $lightBlue;
+    }
+
+    button {
+        background-color: $lightBlue;
+        border: none;
+        padding: 1% 2%;
+        text-transform: uppercase;
+    }
      
- }
+}
+
+.gallery {
+    background-color: $greenColor;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+    .mainGallery {
+        display: flex;
+        justify-content: space-between;
+
+        li {
+            width: calc(100%/3 - 20px);
+            list-style-type: none;
+        }
+
+        img {
+            max-width: 100%;
+        }
+    }
+}
 
