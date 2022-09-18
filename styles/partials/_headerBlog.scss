@@ -1,0 +1,36 @@
+@use "variables" as *;
+
+.blogHeader {
+    background-image: url(../under-the-sea-assets/blog-header.jpg);
+    background-color: $darkBlue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.flexContainerNav {
+    display: flex;
+    justify-content: flex-end;
+    // padding-top: 2%;
+    padding-bottom: 5%;
+    a:hover {
+            color: $lightBlue;
+        }
+    a:focus {
+             color: $lightBlue;
+        }
+}
+
+header ul {
+    list-style-type: none;
+    gap: 3rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase; 
+}

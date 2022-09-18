@@ -1,0 +1,107 @@
+@use "variables" as *;
+
+.contactHeader {
+    background-image: url(../under-the-sea-assets/contact-header.jpg);
+    background-color: $darkBlue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+
+    h2 {
+        text-transform: uppercase;
+        margin-left: 37%;
+    }
+}
+
+main {
+    form {
+        background-color: $greenColor;
+        margin-left: 34%;
+        width: 60vw;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: -5%;
+        box-shadow: -40px 40px 0px $lightBlue;
+        margin-bottom: 10%;
+        padding: 3%;
+        font-size: 1.2rem;
+    }
+
+    .name {
+        padding-top: 8%;
+     
+        label {
+            visibility: hidden;
+        };
+
+        input {
+            text-transform: capitalize;
+            border: none;
+            background-color: transparent;
+            color: white;
+            border-bottom: 2px solid $lightBlue;
+            width: 22vw;
+        }
+    }
+
+    .email {
+        padding-top: 8%;
+    
+        label {
+            visibility: hidden;
+        }
+
+        input {
+            text-transform: capitalize;
+            border: none;
+            background-color: transparent;
+            color: white;
+            border-bottom: 2px solid $lightBlue;
+            width: 22vw;
+        }
+    }
+
+    .message {
+        display: block;
+        padding-top: 5%;
+        padding-left: 3%;
+
+        label {
+            visibility: hidden;
+        }
+
+        textarea {
+            border: none;
+            background-color: transparent;
+            color: white;
+            border: 2px solid $lightBlue;
+            width: 51vw;
+            height: 50vh;
+            text-transform: capitalize;
+        }
+    }
+
+    button {
+        width: 93%;
+        background-color: $darkBlue;
+        color: white;
+        text-transform: uppercase;
+        border: none;
+        margin: 3%;
+    }
+}
+
+aside {
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    top: 160%;
+
+    .fa-brands {
+        transform: scale(2);
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-left: -3.5%;
+    }
+}

@@ -1,0 +1,21 @@
+@use "variables" as *;
+
+body {
+    background-color: $darkBlue;
+}
+
+.greenBackground {
+    background-color: $greenColor;
+    height: 1000px;
+    width: 400px;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.leftSideBlog {
+    .leftBlog {
+        img {
+        transform: scale(0.7);
+        z-index: 10;
+        }
+}
+}

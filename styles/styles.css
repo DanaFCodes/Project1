@@ -1,3 +1,45 @@
+.blogHeader {
+  background-image: url(../under-the-sea-assets/blog-header.jpg);
+  background-color: #0c1423;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.flexContainerNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-bottom: 5%;
+}
+.flexContainerNav a:hover {
+  color: #86e0f9;
+}
+.flexContainerNav a:focus {
+  color: #86e0f9;
+}
+
+header ul {
+  list-style-type: none;
+  gap: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -484,7 +526,7 @@ footer p {
   margin: 0;
 }
 
-header {
+.homePageHeader {
   background-image: url(../under-the-sea-assets/header-image.jpg);
   background-color: #0c1423;
   background-repeat: no-repeat;
@@ -560,6 +602,121 @@ header a {
   border: none;
   padding: 1% 2%;
   text-transform: uppercase;
+}
+
+body {
+  background-color: #0c1423;
+}
+
+.greenBackground {
+  background-color: #0f614e;
+  height: 1000px;
+  width: 400px;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+
+.leftSideBlog .leftBlog img {
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+  z-index: 10;
+}
+
+.contactHeader {
+  background-image: url(../under-the-sea-assets/contact-header.jpg);
+  background-color: #0c1423;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+}
+.contactHeader h2 {
+  text-transform: uppercase;
+  margin-left: 37%;
+}
+
+main form {
+  background-color: #0f614e;
+  margin-left: 34%;
+  width: 60vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: -5%;
+  -webkit-box-shadow: -40px 40px 0px #86e0f9;
+          box-shadow: -40px 40px 0px #86e0f9;
+  margin-bottom: 10%;
+  padding: 3%;
+  font-size: 1.2rem;
+}
+main .name {
+  padding-top: 8%;
+}
+main .name label {
+  visibility: hidden;
+}
+main .name input {
+  text-transform: capitalize;
+  border: none;
+  background-color: transparent;
+  color: white;
+  border-bottom: 2px solid #86e0f9;
+  width: 22vw;
+}
+main .email {
+  padding-top: 8%;
+}
+main .email label {
+  visibility: hidden;
+}
+main .email input {
+  text-transform: capitalize;
+  border: none;
+  background-color: transparent;
+  color: white;
+  border-bottom: 2px solid #86e0f9;
+  width: 22vw;
+}
+main .message {
+  display: block;
+  padding-top: 5%;
+  padding-left: 3%;
+}
+main .message label {
+  visibility: hidden;
+}
+main .message textarea {
+  border: none;
+  background-color: transparent;
+  color: white;
+  border: 2px solid #86e0f9;
+  width: 51vw;
+  height: 50vh;
+  text-transform: capitalize;
+}
+main button {
+  width: 93%;
+  background-color: #0c1423;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  margin: 3%;
+}
+
+aside {
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  top: 160%;
+}
+aside .fa-brands {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-left: -3.5%;
 }
 
 @media (max-width: 1250px) {
@@ -770,5 +927,102 @@ header a {
   }
   .mainTwo .textContainerMain h4 {
     margin-top: -10%;
+  }
+}
+@media (max-width: 1250px) {
+  form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  form .name input {
+    width: 50vw;
+    margin-left: -1%;
+  }
+  form .email input {
+    width: 50vw;
+    margin-left: -6%;
+  }
+  form .message {
+    margin-left: -6%;
+  }
+  form button {
+    margin: 4%;
+  }
+  aside h4, aside p {
+    font-size: 120%;
+  }
+}
+@media (max-width: 1100px) {
+  form .email input {
+    margin-left: -7%;
+  }
+  form .message {
+    margin-left: 1%;
+  }
+}
+@media (max-width: 950px) {
+  form .email input {
+    margin-left: -9%;
+  }
+  aside h4,
+aside p {
+    font-size: 100%;
+  }
+}
+@media (max-width: 740px) {
+  form .email input {
+    margin-left: 7%;
+  }
+  form .message {
+    margin-left: 4%;
+  }
+}
+@media (max-width: 690px) {
+  .name {
+    margin-left: 8%;
+  }
+  .message {
+    margin-left: 4%;
+  }
+  aside .fa-brands {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  aside h4,
+aside p {
+    font-size: 80%;
+  }
+  footer {
+    margin-top: 15%;
+  }
+}
+@media (max-width: 480px) {
+  form .name {
+    margin-left: -2%;
+  }
+  form .email input {
+    margin-left: 7%;
+  }
+  form .message {
+    margin-left: 3%;
+  }
+  form button {
+    margin-right: 2%;
+  }
+  aside .fa-brands {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  aside h4,
+aside p {
+    font-size: 70%;
+  }
+  footer {
+    margin-top: 25%;
   }
 }
