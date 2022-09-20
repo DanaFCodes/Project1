@@ -9,7 +9,6 @@
 .flexContainerNav {
     display: flex;
     justify-content: flex-end;
-    // padding-top: 2%;
     padding-bottom: 5%;
     a:hover {
             color: $lightBlue;
@@ -54,18 +53,19 @@ header a {
     
     h3 {
         text-transform: uppercase;
+
+        .homeButton {
+                background-color: $lightBlue;
+                border: none;
+                padding: 1% 2%;
+                text-transform: uppercase;
+                width: 30%;
+            }
     }
     
     .underTheSeaP {
         margin-left: 5%;
         margin-right: 5%;
         text-align: left;
-    }
-
-    button {
-        background-color: $lightBlue;
-        border: none;
-        padding: 1% 2%;
-        text-transform: uppercase;
     }
 }

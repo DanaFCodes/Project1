@@ -594,16 +594,17 @@ header a {
 .underTheSea h3 {
   text-transform: uppercase;
 }
-.underTheSea .underTheSeaP {
-  margin-left: 5%;
-  margin-right: 5%;
-  text-align: left;
-}
-.underTheSea button {
+.underTheSea h3 .homeButton {
   background-color: #86e0f9;
   border: none;
   padding: 1% 2%;
   text-transform: uppercase;
+  width: 30%;
+}
+.underTheSea .underTheSeaP {
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: left;
 }
 
 body {
