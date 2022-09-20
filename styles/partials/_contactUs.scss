@@ -14,89 +14,94 @@
     }
 }
 
-main {
-    form {
-        background-color: $greenColor;
-        margin-left: 34%;
-        width: 60vw;
+.contactForm {
+    background-color: $greenColor;
+    margin-left: 34%;
+    width: 60vw;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -5%;
+    box-shadow: -40px 40px 0px $lightBlue;
+    margin-bottom: 10%;
+    padding: 2%;
+    font-size: 1.2rem;
+
+    .topRow {
         display: flex;
-        flex-wrap: wrap;
-        margin-top: -5%;
-        box-shadow: -40px 40px 0px $lightBlue;
-        margin-bottom: 10%;
-        padding: 3%;
-        font-size: 1.2rem;
     }
+}
 
-    .name {
-        padding-top: 8%;
-     
-        label {
-            visibility: hidden;
-        };
-
-        input {
-            text-transform: capitalize;
-            border: none;
-            background-color: transparent;
-            color: white;
-            border-bottom: 2px solid $lightBlue;
-            width: 22vw;
-        }
-    }
-
-    .email {
-        padding-top: 8%;
+.contactName {
+    padding-top: 8%;
+    display: flex;
     
-        label {
-            visibility: hidden;
-        }
-
-        input {
-            text-transform: capitalize;
-            border: none;
-            background-color: transparent;
-            color: white;
-            border-bottom: 2px solid $lightBlue;
-            width: 22vw;
-        }
+    label {
+        visibility: hidden;
     }
 
-    .message {
-        display: block;
-        padding-top: 5%;
-        padding-left: 3%;
-
-        label {
-            visibility: hidden;
-        }
-
-        textarea {
-            border: none;
-            background-color: transparent;
-            color: white;
-            border: 2px solid $lightBlue;
-            width: 51vw;
-            height: 50vh;
-            text-transform: capitalize;
-        }
-    }
-
-    button {
-        width: 93%;
-        background-color: $darkBlue;
-        color: white;
-        text-transform: uppercase;
+    input {
+        text-transform: capitalize;
         border: none;
-        margin: 3%;
+        background-color: transparent;
+        color: white;
+        border-bottom: 2px solid $lightBlue;
+        width: 23vw;
     }
+}
+
+.contactEmail {
+    display: flex;
+    padding-top: 8%;
+
+    label {
+        visibility: hidden;
+    }
+
+    input {
+        text-transform: capitalize;
+        border: none;
+        background-color: transparent;
+        color: white;
+        border-bottom: 2px solid $lightBlue;
+        width: 23vw;
+    }
+}
+
+.contactMessage {
+    display: block;
+    padding-top: 5%;
+    padding-left: 3%;
+
+    label {
+        visibility: hidden;
+    }
+
+    textarea {
+        border: none;
+        background-color: transparent;
+        color: white;
+        border: 2px solid $lightBlue;
+        width: 52vw;
+        height: 50vh;
+        text-transform: capitalize;
+    }
+}
+
+button {
+    width: 94%;
+    background-color: $darkBlue;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    margin: 3%;
 }
 
 aside {
     color: white;
     text-transform: uppercase;
     position: absolute;
-    top: 160%;
+    top: 75%;
+
 
     .fa-brands {
         transform: scale(2);
@@ -105,3 +110,10 @@ aside {
         margin-left: -3.5%;
     }
 }
+
+footer {
+position:absolute;
+width: 100%;
+}
+
+

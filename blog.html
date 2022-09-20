@@ -16,29 +16,29 @@
     <header class="blogHeader">
         <nav class="flexContainerNav wrapper">
             <ul>
-                <li><a href="#">home</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">blog</a></li>
-                <li><a href="#">contact</a></li>
+                <li><a href="./index.html">home</a></li>
+                <li><a href="./index.html">about</a></li>
+                <li><a href="./blog.html">blog</a></li>
+                <li><a href="./contactUs.html">contact</a></li>
             </ul>
         </nav>
     </header>
 
 
     <main>
-        <section class="leftSide">
-        <aside class="leftSideBlog">
+        <aside class="leftSide">
             <div class="greenBackground"></div>
             
-            <div class="leftBlog">
+            <div class="leftBlogImg">
             <img src="./under-the-sea-assets/side-blog-image.jpg" alt="large and small fish siwmming in aquarium, crowd observing">
             </div>
+
             <div class="aboutUnderTheSea wrapper">
                 <h4>abount under the sea</h4>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum quam repudiandae, magni debitis doloremque
                     eaque doloribus enim ipsam vero aperiam?</p>
         
-                <h4>recent posts</h4>
+                <h4 class="recentPost">recent posts</h4>
                 <ul class="blogList">
                     <li>Lorem ipsum dolor sit.</li>
                     <li>Lorem ipsum dolor sit.</li>
@@ -47,22 +47,22 @@
                 </ul>
             </div>
         </aside>
-        </section>
 
         <section class="rightSide">
-        <article>
-        <h2>blog</h2>
+        <div class="flexContainerRightBlog">
+            <h2>blog</h2>
 
-        <div>
-            <img src="./under-the-sea-assets/blog-post-image.jpg" alt="">
+            <img src="./under-the-sea-assets/blog-post-image.jpg" class="imageRight" alt="">
+
+            <div class= "wrapper">
+            <div class="thinBorder">
             <h3>discovering new species</h3>
-            <p>Monday May 4, 2019 by Deiula</p>
+            <figcaption>Monday May 4, 2019 by Deiula</figcaption>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore ex officia quae. Ad ratione est, ducimus tempora aspernatur at, voluptatibus vitae sunt, ea asperiores quaerat labore voluptates. Inventore molestiae amet dolore quas quo enim qui adipisci a sunt atque excepturi molestias officia mollitia, voluptatum asperiores voluptates hic quidem doloremque nobis omnis quasi animi iure? Consequatur enim fugiat nemo porro adipisci obcaecati blanditiis, dicta ab ea natus hic excepturi iure cum odit aperiam sapiente vero itaque nulla eveniet labore soluta explicabo alias maxime. Impedit nostrum, voluptatibus quis iste in quisquam modi beatae voluptatum error necessitatibus ipsam tempore fugit fugiat ad perspiciatis.</p>
-        </div>
-
-
-        <section class="comments">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus debitis qui, rerum blanditiis voluptate, voluptas, eveniet quod at tenetur laboriosam minus quis necessitatibus esse asperiores consectetur! Error necessitatibus dicta, delectus neque dolorem doloremque. Voluptatibus ducimus laboriosam doloribus modi nihil consequatur, asperiores perspiciatis eveniet aliquam voluptas veritatis molestiae, reiciendis corrupti, quisquam nesciunt nisi vero. Excepturi natus non quis, vero veritatis possimus! Commodi consequuntur adipisci natus consectetur possimus molestiae sit quisquam quos perferendis sed eum praesentium beatae quae deserunt dolores similique voluptas velit, doloribus aspernatur, dolore suscipit? Quae necessitatibus incidunt sapiente architecto eius unde non hic blanditiis, voluptatum reprehenderit minus voluptatibus quasi aperiam aliquid optio cumque possimus soluta delectus laborum quia quos quam? Eius, quidem earum vel eaque sed quos architecto doloremque? Nobis quos modi at, voluptatibus dolorem rem nihil dignissimos, beatae eum hic placeat, quo asperiores dolores quis possimus ullam nam repellat ipsam reiciendis! Ea, aperiam sit? Harum id quod sit sapiente repellendus facere soluta vero perspiciatis natus. Necessitatibus odio neque ullam adipisci quam laborum sapiente tenetur ipsam aliquam veritatis delectus iusto, porro vel? Maiores omnis cupiditate similique. Quam, voluptas! Qui est, sint quisquam dignissimos asperiores cupiditate officiis enim similique repudiandae eum maxime ipsa iste quaerat accusamus libero architecto at amet? Veritatis natus veniam dicta obcaecati temporibus, perferendis consequuntur doloremque ex nostrum dignissimos quis quasi eligendi laborum? Totam minus odit odio? Iure corrupti quis saepe, quisquam inventore sequi fugiat libero explicabo vero possimus laborum porro officiis dolores. Non aspernatur reiciendis odit ratione veritatis blanditiis nisi laudantium laboriosam numquam sint nobis fugit voluptatum inventore, optio voluptates ea saepe commodi amet dolore pariatur. Aliquid laudantium, quibusdam incidunt, velit illum repudiandae unde mollitia ad, eum aperiam et amet minus possimus laborum consequuntur voluptate magnam sequi ut non ullam animi obcaecati! Rem iusto voluptate doloribus fuga repellat animi nostrum. Repellat consequuntur tenetur atque? Architecto, quis.</p>
+            </div>
+            
+            <section class="comments wrapper">
             <h4>comments:</h4>
             <img src="./under-the-sea-assets/comment-1.jpg" alt="photo of person, looking left">
 
@@ -70,16 +70,41 @@
 
             <img src="./under-the-sea-assets/comment-2.jpg" alt="person looking at camera, leaning against wall">
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati illo harum perferendis provident libero sunt error iste architecto laboriosam qui, unde autem, ipsum officia assumenda fugit dolores? Quisquam, repudiandae voluptas!</p>
-        </section>
+            </section>
 
-        <section>
-           FUCKING FORM !!!
-        </section>
+            <form action="#" method="#" class="form" name="myForm">
+                
+                <div class="topContainerBlog">
+                <div class="name">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="name">
+                </div>
+        
+                <div class="email">
+                    <label for="emailAddress">email address</label>
+                    <input type="email" id="emailAddress" name="emailAddress" required placeholder="email address">
+                </div>
+                </div>
+        
+                <div class="comment">
+                    <label for="comment">comment</label>
+                    <textarea id="comment" name="comment" required placeholder="comment"></textarea>
+                </div>
+        
+                <button type="submit">POST COMMENT</button>
+        </form>
+       
+
+            </div>
+
+        </div>
         </section>
     </main>
 
     <footer>
+        <div class="footer">
         <p>Copyright &copy 2022 Juno College</p>
+        </div>
     </footer>
 
     

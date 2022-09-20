@@ -3,7 +3,7 @@
   background-color: #0c1423;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 70vh;
   width: 100%;
 }
 
@@ -351,13 +351,13 @@ p {
   width: 40%;
   text-align: left;
 }
-.mainOne .textContainerMain button {
+.mainOne .textContainerMain .homeButton {
   background-color: #0c1423;
   color: white;
   border: none;
   text-transform: uppercase;
   padding: 3%;
-  width: 30;
+  width: 30%;
 }
 
 .mainTwo {
@@ -379,7 +379,7 @@ p {
 .mainTwo .textContainerMain p {
   text-align: right;
 }
-.mainTwo .textContainerMain button {
+.mainTwo .textContainerMain .homeButton {
   background-color: #0c1423;
   color: white;
   border: none;
@@ -491,11 +491,13 @@ p {
   -webkit-box-shadow: 40px 40px 0px #86e0f9;
           box-shadow: 40px 40px 0px #86e0f9;
 }
-.thisMonthsProfile button {
+.thisMonthsProfile .homeButton {
   background-color: #86e0f9;
   border: none;
-  padding: 1% 2%;
+  padding: 1%;
   text-transform: uppercase;
+  width: 50%;
+  margin-left: 25%;
 }
 
 .gallery {
@@ -608,18 +610,182 @@ body {
   background-color: #0c1423;
 }
 
-.greenBackground {
+.leftSide {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.leftSide .greenBackground {
   background-color: #0f614e;
-  height: 1000px;
-  width: 400px;
+  height: 950px;
+  width: 515px;
   margin-left: 10%;
-  margin-top: 5%;
+  margin-top: 7%;
+}
+.leftSide .leftBlogImg img {
+  z-index: 10;
+  width: 100%;
+  position: absolute;
+  bottom: 50%;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  margin-left: -100%;
+}
+.leftSide .aboutUnderTheSea {
+  margin-left: 15%;
+  position: absolute;
+  bottom: 5%;
+}
+.leftSide .aboutUnderTheSea h4 {
+  font-size: 280%;
+  padding-bottom: 7%;
+}
+.leftSide .aboutUnderTheSea p {
+  margin-right: 25%;
+  margin-top: -10%;
+  font-size: 150%;
+}
+.leftSide .aboutUnderTheSea li {
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+  line-height: 32px;
+  margin-left: -2%;
+}
+.leftSide .aboutUnderTheSea .recentPost {
+  margin-bottom: -6%;
+  margin-top: 10%;
 }
 
-.leftSideBlog .leftBlog img {
-  -webkit-transform: scale(0.7);
-          transform: scale(0.7);
-  z-index: 10;
+.rightSide {
+  margin-left: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.rightSide .flexContainerRightBlog {
+  margin-top: -40%;
+}
+.rightSide .flexContainerRightBlog h2 {
+  text-transform: uppercase;
+}
+.rightSide .flexContainerRightBlog h3 {
+  padding-top: 10%;
+  padding-left: 3%;
+  text-transform: uppercase;
+}
+.rightSide .flexContainerRightBlog .imageRight {
+  width: 100%;
+  -webkit-box-shadow: -41px 51px 0px #86e0f9;
+          box-shadow: -41px 51px 0px #86e0f9;
+  margin-top: -5%;
+}
+.rightSide .flexContainerRightBlog .thinBorder {
+  -webkit-box-shadow: -7.75px 6px 0px #86e0f9;
+          box-shadow: -7.75px 6px 0px #86e0f9;
+  position: relative;
+  left: -10%;
+  bottom: 3%;
+  top: -3%;
+  padding-right: 3%;
+}
+.rightSide .flexContainerRightBlog .thinBorder figcaption {
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  line-height: 32px;
+  padding-left: 3%;
+  margin-top: -5%;
+  margin-bottom: 10%;
+}
+.rightSide .flexContainerRightBlog .thinBorder p {
+  padding-left: 3%;
+  padding-bottom: 5%;
+}
+.rightSide .flexContainerRightBlog .comments {
+  margin-left: -5%;
+}
+.rightSide .flexContainerRightBlog .comments h4 {
+  text-transform: uppercase;
+}
+.rightSide .flexContainerRightBlog .comments img {
+  float: left;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  padding-top: 2%;
+}
+.rightSide .form {
+  background-color: transparent;
+  margin-left: -12%;
+  width: 50vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: -5%;
+  margin-bottom: 10%;
+  padding: 3%;
+  font-size: 1.2rem;
+}
+.rightSide .form .topContainerBlog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.rightSide .form .name {
+  padding-top: 8%;
+}
+.rightSide .form .name label {
+  visibility: hidden;
+}
+.rightSide .form .name input {
+  text-transform: capitalize;
+  border: none;
+  background-color: transparent;
+  color: white;
+  border-bottom: 2px solid #86e0f9;
+  width: 18vw;
+}
+.rightSide .form .email {
+  padding-top: 8%;
+}
+.rightSide .form .email label {
+  visibility: hidden;
+}
+.rightSide .form .email input {
+  text-transform: capitalize;
+  border: none;
+  background-color: transparent;
+  color: white;
+  border-bottom: 2px solid #86e0f9;
+  width: 18vw;
+}
+.rightSide .form .comment {
+  display: block;
+  padding-top: 5%;
+  padding-left: 3%;
+}
+.rightSide .form .comment label {
+  visibility: hidden;
+}
+.rightSide .form .comment textarea {
+  border: none;
+  background-color: transparent;
+  color: white;
+  border: 2px solid #86e0f9;
+  width: 41vw;
+  height: 50vh;
+  text-transform: capitalize;
+  margin-left: -6%;
+}
+.rightSide .form button {
+  width: 87%;
+  background-color: #0f614e;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  margin: 4.5%;
+  text-align: center;
 }
 
 .contactHeader {
@@ -635,7 +801,7 @@ body {
   margin-left: 37%;
 }
 
-main form {
+.contactForm {
   background-color: #0f614e;
   margin-left: 34%;
   width: 60vw;
@@ -648,56 +814,71 @@ main form {
   -webkit-box-shadow: -40px 40px 0px #86e0f9;
           box-shadow: -40px 40px 0px #86e0f9;
   margin-bottom: 10%;
-  padding: 3%;
+  padding: 2%;
   font-size: 1.2rem;
 }
-main .name {
-  padding-top: 8%;
+.contactForm .topRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
-main .name label {
+
+.contactName {
+  padding-top: 8%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contactName label {
   visibility: hidden;
 }
-main .name input {
+.contactName input {
   text-transform: capitalize;
   border: none;
   background-color: transparent;
   color: white;
   border-bottom: 2px solid #86e0f9;
-  width: 22vw;
+  width: 23vw;
 }
-main .email {
+
+.contactEmail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding-top: 8%;
 }
-main .email label {
+.contactEmail label {
   visibility: hidden;
 }
-main .email input {
+.contactEmail input {
   text-transform: capitalize;
   border: none;
   background-color: transparent;
   color: white;
   border-bottom: 2px solid #86e0f9;
-  width: 22vw;
+  width: 23vw;
 }
-main .message {
+
+.contactMessage {
   display: block;
   padding-top: 5%;
   padding-left: 3%;
 }
-main .message label {
+.contactMessage label {
   visibility: hidden;
 }
-main .message textarea {
+.contactMessage textarea {
   border: none;
   background-color: transparent;
   color: white;
   border: 2px solid #86e0f9;
-  width: 51vw;
+  width: 52vw;
   height: 50vh;
   text-transform: capitalize;
 }
-main button {
-  width: 93%;
+
+button {
+  width: 94%;
   background-color: #0c1423;
   color: white;
   text-transform: uppercase;
@@ -709,7 +890,7 @@ aside {
   color: white;
   text-transform: uppercase;
   position: absolute;
-  top: 160%;
+  top: 75%;
 }
 aside .fa-brands {
   -webkit-transform: scale(2);
@@ -717,6 +898,11 @@ aside .fa-brands {
   padding-left: 5%;
   padding-right: 5%;
   margin-left: -3.5%;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
 }
 
 @media (max-width: 1250px) {
@@ -789,7 +975,7 @@ aside .fa-brands {
   .mainTwo .textContainerMain p {
     text-align: center;
   }
-  .mainTwo .textContainerMain button {
+  .mainTwo .textContainerMain .homeButton {
     margin-left: 0;
   }
   .mainTwo .boxShadow {
@@ -827,6 +1013,9 @@ aside .fa-brands {
   .linksToStuff .circle a {
     margin-top: 11%;
     margin-right: 2%;
+  }
+  .thisMonthsProfile .profile .textContainerProfile .homeButton {
+    margin-left: 0%;
   }
 }
 @media (max-width: 740px) {
@@ -897,6 +1086,11 @@ aside .fa-brands {
   html {
     font-size: 50%;
   }
+  .headerContainer {
+    width: 40%;
+    font-size: 1000%;
+    margin-bottom: 50%;
+  }
   .underTheSea {
     padding: 40% 10% 10%;
     display: -webkit-box;
@@ -930,99 +1124,299 @@ aside .fa-brands {
   }
 }
 @media (max-width: 1250px) {
-  form {
+  .contactName input {
+    width: 25vw;
+  }
+  .contactEmail input {
+    width: 25vw;
+  }
+  aside {
+    position: absolute;
+    top: 110%;
+    left: 30%;
+  }
+  aside h4,
+aside p {
+    font-size: 150%;
+  }
+  aside .fa-brands {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    margin-top: 15%;
+  }
+  footer {
+    margin-top: 30%;
+  }
+}
+@media (max-width: 1100px) {
+  .contactMessage {
+    margin-left: 1%;
+  }
+  aside {
+    position: absolute;
+    top: 110%;
+    left: 30%;
+  }
+  aside h4,
+aside p {
+    font-size: 150%;
+  }
+  aside .fa-brands {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  footer {
+    margin-top: 30%;
+  }
+}
+@media (max-width: 950px) {
+  .topRow {
+    margin-left: -2%;
+    gap: 1rem;
+  }
+  .contactEmail {
+    margin-left: -10%;
+  }
+  aside {
+    position: absolute;
+    top: 110%;
+    left: 30%;
+  }
+  aside h4,
+aside p {
+    font-size: 150%;
+  }
+  aside .fa-brands {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  footer {
+    margin-top: 40%;
+  }
+}
+@media (max-width: 740px) {
+  .topRow {
+    gap: 1rem;
+  }
+  .contactName input {
+    width: 23vw;
+  }
+  .contactEmail input {
+    width: 23vw;
+    margin-left: -25%;
+  }
+  footer {
+    margin-top: 40%;
+  }
+  aside {
+    position: absolute;
+    top: 110%;
+    left: 30%;
+  }
+  aside .fa-brands {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+@media (max-width: 690px) {
+  .topRow {
+    gap: 4rem;
+  }
+  .contactName {
+    width: 20vw;
+    margin-right: 20%;
+  }
+  .contactEmail {
+    width: 20vw;
+  }
+  .contactMessage textarea {
+    height: 20vh;
+  }
+  aside {
+    position: absolute;
+    top: 80%;
+    left: 30%;
+  }
+  aside .fa-brands {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  footer {
+    margin-top: 65%;
+  }
+}
+@media (max-width: 480px) {
+  .flexContainerNav {
+    padding-top: 5%;
+  }
+  .contactHeader h2 {
+    margin-left: 20%;
+  }
+  .topRow {
+    margin-left: -7%;
+  }
+  .contactMessage textarea {
+    height: 20vh;
+  }
+  aside {
+    top: 70%;
+    left: 25%;
+    font-size: 140%;
+  }
+  footer {
+    margin-top: 100%;
+  }
+}
+@media (max-width: 1250px) {
+  .leftSide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    margin-top: 60%;
+    width: 100%;
   }
-  form .name input {
-    width: 50vw;
-    margin-left: -1%;
+  .leftSide .greenBackground {
+    visibility: hidden;
   }
-  form .email input {
-    width: 50vw;
-    margin-left: -6%;
+  .leftSide .leftBlogImg img {
+    visibility: hidden;
   }
-  form .message {
-    margin-left: -6%;
+  .leftSide .aboutUnderTheSea {
+    margin-left: -25%;
+    margin-bottom: 75%;
   }
-  form button {
-    margin: 4%;
+  .leftSide .aboutUnderTheSea h4 {
+    margin-top: 5%;
   }
-  aside h4, aside p {
-    font-size: 120%;
+  .rightSide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 0%;
+  }
+  .rightSide .flexContainerRightBlog h2 {
+    padding-top: 25%;
+    padding-left: 5%;
+  }
+  .rightSide .flexContainerRightBlog h3 {
+    padding-top: 0%;
+  }
+  .rightSide .flexContainerRightBlog .imageRight {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    -webkit-box-shadow: 41px 51px 0px #86E0F9;
+            box-shadow: 41px 51px 0px #86E0F9;
+    margin-left: -10%;
+    margin-bottom: 55%;
+  }
+  .rightSide .flexContainerRightBlog .thinBorder {
+    margin-left: 10%;
+    margin-top: -17%;
+  }
+  .rightSide .flexContainerRightBlog .comments {
+    margin-left: 0%;
+  }
+  .rightSide .flexContainerRightBlog .comments img {
+    float: left;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    padding-top: 2%;
+  }
+  .rightSide .flexContainerRightBlog .comments p {
+    padding-bottom: 5%;
+  }
+  .rightSide .flexContainerRightBlog .form {
+    padding-left: 5%;
+    width: 80vw;
+  }
+  .rightSide .flexContainerRightBlog .form .topContainerBlog {
+    margin-left: 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .rightSide .flexContainerRightBlog .form .name input {
+    width: 30vw;
+  }
+  .rightSide .flexContainerRightBlog .form .email input {
+    width: 30vw;
+  }
+  .rightSide .flexContainerRightBlog .form .comment textarea {
+    width: 70vw;
+    margin-left: 5%;
+  }
+  .rightSide .flexContainerRightBlog .form button {
+    margin-left: 15%;
+    width: 100%;
+    margin-bottom: -20%;
   }
 }
 @media (max-width: 1100px) {
-  form .email input {
-    margin-left: -7%;
+  .rightSide .flexContainerRightBlog .thinBorder {
+    margin-left: 10%;
+    margin-top: 10%;
   }
-  form .message {
-    margin-left: 1%;
+  .rightSide .flexContainerRightBlog .form .topContainerBlog {
+    margin-left: 8%;
   }
 }
 @media (max-width: 950px) {
-  form .email input {
-    margin-left: -9%;
+  .rightSide .flexContainerRightBlog .thinBorder {
+    margin-top: 25%;
   }
-  aside h4,
-aside p {
-    font-size: 100%;
+}
+@media (max-width: 850px) {
+  .leftSide .aboutUnderTheSea {
+    margin-left: -25%;
+    margin-bottom: 100%;
+  }
+  .rightSide .flexContainerRightBlog .thinBorder {
+    margin-top: 35%;
   }
 }
 @media (max-width: 740px) {
-  form .email input {
-    margin-left: 7%;
-  }
-  form .message {
-    margin-left: 4%;
+  .rightSide .flexContainerRightBlog .thinBorder {
+    margin-top: 50%;
   }
 }
 @media (max-width: 690px) {
-  .name {
-    margin-left: 8%;
+  .leftSide .aboutUnderTheSea {
+    margin-bottom: 70%;
+    margin-left: -20%;
   }
-  .message {
-    margin-left: 4%;
+  .rightSide .flexContainerRightBlog .thinBorder {
+    margin-top: 65%;
   }
-  aside .fa-brands {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
+  .rightSide .flexContainerRightBlog .form {
+    padding-left: 5%;
+    width: 80vw;
   }
-  aside h4,
-aside p {
-    font-size: 80%;
+  .rightSide .flexContainerRightBlog .form .topContainerBlog {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
-  footer {
-    margin-top: 15%;
+  .rightSide .flexContainerRightBlog .form .name input {
+    width: 25vw;
+  }
+  .rightSide .flexContainerRightBlog .form .email input {
+    width: 25vw;
   }
 }
 @media (max-width: 480px) {
-  form .name {
-    margin-left: -2%;
+  .leftSide .aboutUnderTheSea {
+    margin-left: -20%;
+    margin-bottom: 45%;
   }
-  form .email input {
-    margin-left: 7%;
-  }
-  form .message {
-    margin-left: 3%;
-  }
-  form button {
-    margin-right: 2%;
-  }
-  aside .fa-brands {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
-  }
-  aside h4,
-aside p {
-    font-size: 70%;
-  }
-  footer {
-    margin-top: 25%;
+  .rightSide .flexContainerRightBlog .thinBorder {
+    margin-top: 155%;
   }
 }

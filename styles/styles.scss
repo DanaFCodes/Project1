@@ -7,7 +7,6 @@
 @use "partials/headerHome";
 @use "partials/mainBlog";
 @use "partials/contactUs";
-// // // MEDIA QUERY PARTIAL ALWAYS GOES @BOTTOM
 @use "partials/mediaQueriesHome";
 @use "partials/mediaQueriesContactUs";
-
+@use "partials/mediaQueriesBlog"; 

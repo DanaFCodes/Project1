@@ -28,13 +28,13 @@
             text-align: left;
         }
 
-        button {
+        .homeButton {
             background-color: $darkBlue;
             color: white;
             border: none;
             text-transform: uppercase;
             padding: 3%;
-            width: 30
+            width: 30%;
         }
     }
 }
@@ -59,7 +59,7 @@
                 text-align: right;
             }
     
-            button {
+            .homeButton {
                 background-color: $darkBlue;
                 color: white;
                 border: none;
@@ -174,11 +174,13 @@
         box-shadow: 40px 40px 0px $lightBlue;
     }
 
-    button {
+    .homeButton {
         background-color: $lightBlue;
         border: none;
-        padding: 1% 2%;
+        padding: 1%;
         text-transform: uppercase;
+        width: 50%;
+        margin-left: 25%;
     }
      
 }
