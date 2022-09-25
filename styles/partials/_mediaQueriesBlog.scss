@@ -1,4 +1,29 @@
 @media (max-width: 1250px) {
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active.bar:nth-child(1){
+        transform: translate(8px) rotate(45deg);
+    }
+
+    .hamburger.active.bar:nth-child(3) {
+        transform: translate(-8px) rotate(-45deg);
+    }
+
+    .flexContainerNav {
+        position:fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+    }
+
+
     .leftSide {
         display: flex;
         flex-direction: column;
@@ -12,7 +37,6 @@
                 img {
                 visibility: hidden;
                 }
-
             }
 
             .aboutUnderTheSea {
