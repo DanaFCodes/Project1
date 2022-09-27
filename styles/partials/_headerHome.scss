@@ -18,18 +18,37 @@
         }
 }
 
-header ul {
+.nav-links {
     list-style-type: none;
     gap: 3rem;
     display: flex;
     justify-content: flex-end;
 }
 
-header a {
+.nav-links a {
     text-decoration: none;
     color: white;
     text-transform: uppercase; 
 }
+
+.burger {
+    // display: block;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    z-index: 40;
+    display: none;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: tomato;
+    z-index: 30;
+    display: block;
+    margin: 15% -135%;
+}
+
 
 .goldFish img {
     max-width: 100%;

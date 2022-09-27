@@ -1,21 +1,70 @@
-// Hide the hamburger menu on click
-// - on click, show the slide-out menu
-// - on click, hide the hamburger button (class navButton)
+// when you cick burger button, it is going to activate .show
 
-const hamElement = document.querySelector(".navButton");
-const slideOutMenu = document.querySelector(".slideOutNav");
-const hamCloseButton = document.querySelector(".xButton");
+// .burger gets clicked, using event is going to toggle .show on nav
 
-// ES5 version
-// hamElement.addEventLister('click', function() {
-//code here
-// });
+const navToggle = document.querySelector(".burger")
 
-// ES6
-hamElement.addEventListener("click", () => {
-    slideOutMenu.classList.add("slideOutNavOpen")
-    // what I target.object.method (add is exclusive to the classList). Classlist specifies that this is a class so you don't need the dot!
+navToggle.addEventListener('click', (e) => {
+    document.querySelector(".nav-links").classList.toggle("show")
+
+    navToggle.classList.toggle('toggle');
 })
-// X button
-// - on click, hide the slide-out menu
-// - on click, hide the class of hamburger menu
+
+
+
+
+// const on = document.querySelector(".burger").addEventListener('click', (e) => {
+//     // classList is a class so no need to have the dot before the class-name we are calling
+    
+//     if (e) {
+//         document.querySelector(".nav-links").classList.toggle('show');
+//     } else {
+//         document.querySelector(".nav-links").classList.toggle('dissapear');
+//     }
+        
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const navSlide = () => {
+//     const burger = document.querySelector(".burger");
+//     console.log(burger);
+//     const nav = document.querySelector(".nav-links");
+//     console.log(nav);
+//     const navLinks = document.querySelectorAll(".nav-links li");
+//     console.log(navLinks);
+//     // toggle nav
+//     burger.addEventListener("click", () => {
+//         nav.classList.toggle('nav-active');
+
+//         navLinks.forEach((link, index) => {
+//             if (link.style.animation) {
+//                 link.style.animation = "";
+//             } else {
+//                 link.style.animation = `navLinkFade 0.5s ease-in-out forwards ${index / 7 + 0.5}s`
+//             }
+//         });
+//     });
+
+// }
+
+// how do i make it smooth-slide OUT on click ?
+// why did my whole nav bar disappear where is she?
+// create new branch on feature branch then upload to there!
+
+// navSlide();
+

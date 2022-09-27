@@ -21,31 +21,30 @@
         }
 }
 
-header ul {
+.nav-links {
     list-style-type: none;
     gap: 3rem;
     display: flex;
     justify-content: flex-end;
 }
 
-header a {
+.nav-links a {
     text-decoration: none;
     color: white;
     text-transform: uppercase; 
 
 }
 
-.hamburger {
+.burger {
     display: none;
     cursor: pointer;
 }
 
-.bars {
-    display: block;
+.burger div {
     width: 25px;
     height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    color: white;
+    background-color: tomato;
+    z-index: 30;
+    display: block;
+    margin: 15% -135%;
 }
